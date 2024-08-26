@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/style1.css">
     <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     </head>
 <body data-spy="scroll" data-target="#navbarScroll">
 
@@ -62,13 +62,13 @@
             </div>
         </nav>
         
-        <div id="details" class="container-fluid py-5 bg-light " style="height: 105vh;">
+        <div id="details" class="container-fluid py-3 px-3 bg-light " style="height: auto;">
     
-                <h3 class="text-center pt-5">About Me</h3>
+                <h3 class="text-center py-5">About Me</h3>
     
-                <div class="row no-gutters bg-light position-relative my-5 shadow p-3 mb-5 bg-white rounded bgInformation">
+                <div class="row no-gutters bg-light position-relative my-2 shadow p-3 bg-white rounded bgInformation">
                     <div class="col-md-6 mb-md-0 p-md-4">
-                        <img src="https://png.pngtree.com/thumb_back/fh260/background/20230611/pngtree-an-avatar-of-a-man-with-a-beard-and-tie-image_2960737.jpg" class="img-fluid rounded-circle" alt="Responsive image">
+                        <img src="assets/img/me.png" class="img-fluid rounded-circle" alt="Responsive image">
                  
                     </div>
                     <div class="col-md-6 position-static p-4 pl-md-0 ">
@@ -79,36 +79,59 @@
                         <p>
                             <a class="btn cmdbtn btn-outline-light my-2 mx-2" data-toggle="collapse" href="#SkillCollapse" role="button" aria-expanded="false" aria-controls="SkillCollapse">My Skills</a>
                             <a class="btn cmdbtn btn-outline-light mx-2 my-2" data-toggle="collapse" href="#EducationCollapse" role="button" aria-expanded="false" aria-controls="SkillCollapse">Education</a>
-                            <a class="btn cmdbtn btn-outline-light mx-2 my-2" data-toggle="collapse" href="#EducationCollapse" role="button" aria-expanded="false" aria-controls="SkillCollapse">Personal Information</a>
+                            <a class="btn cmdbtn btn-outline-light mx-2 my-2" data-toggle="collapse" href="#PersonalInformation" role="button" aria-expanded="false" aria-controls="SkillCollapse">Personal Information</a>
                         </p>
                        </div>
                        </div>
 
                         <div class="collapse multi-collapse " id="SkillCollapse">
                             <div class="card card-body bg-light px-3">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-12">
-                                        <h5>Programming Language</h5>
-                                        <div class="d-flex flex-row">
-                                            <ul class="px-4">
-                                                <li>PHP</li>
-                                                <li>HTML</li>
-                                                <li>CSS</li>
-                                              </ul>
-                                              <ul class="px-3">
-                                                  <li>JavaScript</li>
-                                                <li>Visual Basic</li>
-                                                <li>Java</li>
-                                              </ul>
+                                <div class="row g-0">
+                                   <div class="col-lg-12 col-md-12 col-sm-12 w-100">
+                                    <div class="row g-0">
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <h5>Programming Language</h5>
+                                            <div class="row">
+                                                <div class="col-sm-12 g-1">
+                                                    <div class="d-flex flex-sm-column flex-md-column flex-lg-row">
+                                                        <ul class="px-4">
+                                                            <li>PHP</li>
+                                                            <li>HTML</li>
+                                                            <li>CSS</li>
+                                                        </ul>
+                                                        <ul class="px-3">
+                                                            <li>JavaScript</li>
+                                                            <li>Visual Basic</li>
+                                                            <li>Java</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12">
-                                        <h5>Database</h5>
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <h5>Database</h5>
+                                            <ul class="px-4">
+                                            <li>MYSQL</li>
+                                            <li>MSSQL</li>
+                                            </ul>
+                                        </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <h5>Framework</h5>
+                                        <div class="d-flex flex-sm-column flex-md-column flex-lg-row">
                                         <ul class="px-4">
-                                          <li>MYSQL</li>
-                                          <li>MSSQL</li>
+                                            <li>Laravel</li>
+                                            <li>Bootstrap</li>
+                                            <li>React Js</li>
                                         </ul>
+                                        <ul class="px-3">
+                                            <li>Tailwind</li>
+                                            <li>Inertia Js</li>
+                                            <li>Livewire</li>
+                                        </ul>
+                                       </div>
                                     </div>
+                                    </div>
+                                   </div>
                                 </div>
                             </div>
                         </div>
@@ -120,53 +143,128 @@
                                         <h5>Education Background</h5>
                                         <h6>Tertiary</h6>
                                         <p>Eulogio "Amang" Rodriguez Institute of Science and Technology <br>
-                                        <small>2020 - 2024</small></p>
+                                        <!-- <small>2020 - 2024</small> -->
+                                    </p>
                                         <h6>Senior High School</h6>
                                         <p>ABE International Business College<br>
-                                        <small>2018 - 2020</small></p>
+                                        <!-- <small>2018 - 2020</small> -->
+                                    </p>
                                         <h6>Junior High School</h6>
                                         <p>Tondo High School<br>
-                                        <small>2013 - 2017</small></p>
+                                        <!-- <small>2013 - 2017</small> -->
+                                    </p>
 
                                         <h6>Primary</h6>
                                         <p>Manuel L. Quezon Elementary School<br>
-                                        <small>2007 - 2013</small></p>
+                                        <!-- <small>2007 - 2013</small> -->
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="collapse multi-collapse" id="PersonalInformation">
+                            <div class="card card-body bg-light px-3">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 w-100">
+                                        <h5>Personal Information</h5>
+                                        <h6>Name: Julius D. Fuentiblanca</h6>
+                                        <h6>Contact: 09695664450</h6>
+                                        <h6>Email: fuentiblanca.j.bsinfotech@gmail.com</h6>
                                         
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                  </div>
-        </div>
-    
-        <div id="projects" class="container-fluid bg-light py-5" style="height: 105vh;">
-           
-            <div class="mx-auto text-center ">
-                <h3 class="pt-5">My Projects</h3>
-            </div>
-    
-    
-        </div>
-    
-        
-        <div id="contactme" class="container-fluid bg-light py-5" style="height: 105vh;">
-           
-                <div class="mx-auto text-center ">
-                    <h3 class="pt-5">Contact Me</h3>
                 </div>
-        
-        
-        </div>
 
+
+                <div id="projects" class="container-fluid bg-light py-3" style="height: 105vh;">
+           
+                    <div class="mx-auto text-center ">
+                        <h3 class="py-5">My Projects</h3>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-lg-12 col-md-12 sm-12 w-100">
+                            <div class="row g-0">
+                                <div class="col-lg-4 col-md-4 w-100">
+                                    <h4 class="text-center">Barangay Youth Program</h4>
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <!-- Front Side -->
+                                            
+                                            <div class="flip-card-front">
+                                                
+                                                <img src="assets/Project/BarangayProgram.png" alt="" class="rounded img-fluid projectImg">
+                                            </div>
+                                            <!-- Back Side -->
+                                            <div class="flip-card-back">
+                                                <h4 class="text-center">Explanation</h4>
+                                                <p>This is a detailed explanation of the Barangay Youth Program.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 w-100">
+                                    <h4 class="text-center">Preventive Maintenance Service</h4>
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <!-- Front Side -->
+                                            <div class="flip-card-front">
+                                               
+                                                <img src="assets/Project/PMS.png" alt="" class="rounded img-fluid">
+                                            </div>
+                                            <!-- Back Side -->
+                                            <div class="flip-card-back py-auto">
+                                                <div class="bg-primary bg-gradient text-white ">
+                                                    <h4 class="text-center">PMS</h4>
+                                                    <p class="h-50 overflow-auto">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quam incidunt sunt odit facere soluta a eligendi laudantium dolorum, nam at, voluptas veritatis culpa! Illo dolor distinctio sapiente assumenda voluptates?
+                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus modi quae, nihil commodi architecto accusamus, officiis, nesciunt eos rerum dolorum voluptate dolore ad enim esse placeat. Eum neque eius facere.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur non harum incidunt? Accusamus pariatur earum quod aliquam quis non? Animi quis officiis culpa velit commodi est hic ratione repellendus facilis.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, placeat quia distinctio voluptatibus voluptates iste ipsum? Nesciunt dolorem veniam, eaque obcaecati repudiandae sunt? Ipsa ducimus reprehenderit numquam maxime harum obcaecati.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolorem tenetur obcaecati molestiae illum ea iure nemo nostrum rem saepe unde, inventore veritatis repellat sed optio, architecto vitae accusamus minima?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 w-100">
+                                    <!-- <img src="assets/Project/BarangayProgram.png" alt="" class="rounded"> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                </div>
+                <div id="contactme" class="container-fluid bg-light py-5" style="height: 105vh;">
+           
+                    <div class="mx-auto text-center ">
+                        <h3 class="pt-5">Contact Me</h3>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <a href="mailto:fuentiblanca.j.bsinfotech@gmail.com" target="_blank" rel="Send Email">Click here to email me</a>
+                        </div>
+                    </div>
+            
+            
+            </div>
+              
+        </div>
+    
 
     </div>
 
 
       <!-- Bootstrap JS, jQuery, and Popper.js -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+      <script src="bootstrap/js/jquery.js"></script>
+      <script src="bootstrap/js/popper.js" ></script>
+      <script src="bootstrap/js/bootstrap.js"></script>
       
 
       <script>
@@ -179,31 +277,31 @@
 
         var textContainer = document.getElementById('textContainer');
 
-$(document).scroll(function(){
-    var scroll_pos = $(this).scrollTop();
+        $(document).scroll(function(){
+            var scroll_pos = $(this).scrollTop();
 
-    // Adding or removing 'text-blue' class based on scroll position
-    if (scroll_pos < 730) {
-        console.log('umay');
-        console.log(window.scrollY);
-        $('.cmdbtn').removeClass('btn-dark');
-        $('.cmdbtn').addClass('btn-outline-light');
+            // Adding or removing 'text-blue' class based on scroll position
+            if (scroll_pos < 730) {
+                // console.log('umay');
+                // console.log(window.scrollY);
+                $('.cmdbtn').removeClass('btn-dark');
+                $('.cmdbtn').addClass('btn-outline-light');
 
-        textContainer.classList.remove('textdark');
-        textContainer.classList.add('text-light');
-        textContainer.classList.add('bgInfod');
-        textContainer.classList.remove('bgInfol');
-    } else {
-        console.log('awit');
-        console.log(window.scrollY);
-        $('.cmdbtn').removeClass('btn-outline-light');
-        $('.cmdbtn').addClass('btn-dark');
-        textContainer.classList.remove('text-light');
-        textContainer.classList.add('textdark');
-        textContainer.classList.remove('bgInfol');
-        textContainer.classList.add('bgInfol');
-    }
-});
+                textContainer.classList.remove('textdark');
+                textContainer.classList.add('text-light');
+                textContainer.classList.add('bgInfod');
+                textContainer.classList.remove('bgInfol');
+            } else {
+                // console.log('awit');
+                // console.log(window.scrollY);
+                $('.cmdbtn').removeClass('btn-outline-light');
+                $('.cmdbtn').addClass('btn-dark');
+                textContainer.classList.remove('text-light');
+                textContainer.classList.add('textdark');
+                textContainer.classList.remove('bgInfol');
+                textContainer.classList.add('bgInfol');
+            }
+        });
 
 // Log scroll position to console
 
