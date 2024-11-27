@@ -132,6 +132,22 @@ body {
   animation-duration: 11s;
 }
 
+.circles li:nth-child(11) {
+  left: 90%;
+  width: 160px;
+  height: 150px;
+  animation-delay: 8s;
+  animation-duration: 10s;
+}
+
+.circles li:nth-child(12) {
+  right: 88%;
+  width: 160px;
+  height: 150px;
+  animation-delay: 8s;
+  animation-duration: 13s;
+}
+
 @keyframes animate {
   0% {
     transform: translateY(0) rotate(0deg);
