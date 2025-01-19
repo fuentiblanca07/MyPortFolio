@@ -14,21 +14,58 @@ body {
   width: 100%;
   position: absolute;
   top: 50vh;
+  bottom: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Align text center in parent */
 }
+
 .context .container {
   width: 50%;
-  height: auto;
+  height: 100%;
+  padding: 0 20px; /* Optional, to add some padding */
 }
+
 .context h1 {
   color: #fff;
   font-size: 50px;
+  margin-bottom: 20px; /* Optional for spacing */
 }
+
 .context h3 {
-  text-justify: center;
-  text-align: center;
   color: #fff;
   font-size: 40px;
 }
+
+@media screen and (max-width: 768px) {
+  .context .container {
+    width: 80%; /* Reduce width on smaller screens */
+  }
+
+  .context h1 {
+    font-size: 35px; /* Adjust font size for small screens */
+  }
+
+  .context h3 {
+    font-size: 30px; /* Adjust font size for small screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .context .container {
+    width: 90%; /* Further reduce width on very small screens */
+  }
+
+  .context h1 {
+    font-size: 25px; /* Adjust font size for very small screens */
+  }
+
+  .context h3 {
+    font-size: 22px; /* Adjust font size for very small screens */
+  }
+}
+
 
 .area {
   background: #4e54c8;
@@ -231,7 +268,7 @@ body {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: rgb(131, 186, 241);
   color: white;
   overflow-y: auto;
   transform: rotateY(180deg);
