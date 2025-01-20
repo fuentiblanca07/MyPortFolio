@@ -13,24 +13,28 @@ body {
 .context {
   width: 100%;
   position: absolute;
-  top: 50vh;
+  left: 0;
+  top: 5vh;
   bottom: 50vh;
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center;
   align-items: center;
-  text-align: center; /* Align text center in parent */
+  text-align: center;  */
 }
 
 .context .container {
   width: 50%;
-  height: 100%;
+  height: auto;
   padding: 0 20px; /* Optional, to add some padding */
 }
 
 .context h1 {
   color: #fff;
-  font-size: 50px;
-  margin-bottom: 20px; /* Optional for spacing */
+  font-size: 60px;
+  padding: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 100000;
+  margin-bottom: 20px;
 }
 
 .context h3 {
@@ -50,6 +54,10 @@ body {
   .context h3 {
     font-size: 30px; /* Adjust font size for small screens */
   }
+
+  /* .context img {
+    width: 80%;
+  } */
 }
 
 @media screen and (max-width: 480px) {
@@ -66,11 +74,10 @@ body {
   }
 }
 
-
 .area {
   /* background: #4e54c8;
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8); */
-  background: #006BFF;
+  background: #b6cbf8;
   background: -webkit-linear-gradient(to left, #000000, #0d6efd);
   width: 100%;
   height: 100vh;
@@ -202,7 +209,7 @@ body {
 }
 
 .bgInformation {
-  background-image: url("https://t3.ftcdn.net/jpg/05/79/48/50/360_F_579485026_Fb2LO9GgmNKkOi18LjoBVAk1wUtZG2DE.jpg");
+  background-image: url("img/backgroundCard.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
