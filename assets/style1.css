@@ -16,21 +16,21 @@ body {
   left: 0;
   top: 5vh;
   bottom: 50vh;
-  /* display: flex; */
-  /* justify-content: center;
+  height: 100%;
+  /* background-color: rebeccapurple; */
+  display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;  */
+  text-align: center;
 }
 
-.context .container {
-  width: 50%;
-  height: auto;
-  padding: 0 20px; /* Optional, to add some padding */
+.context img {
+  width: 100%;
 }
 
 .context h1 {
   color: #fff;
-  font-size: 60px;
+  font-size: 55px;
   padding: 15px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 100000;
@@ -44,7 +44,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .context .container {
-    width: 80%; /* Reduce width on smaller screens */
+    width: 100%; /* Reduce width on smaller screens */
   }
 
   .context h1 {
@@ -55,14 +55,25 @@ body {
     font-size: 30px; /* Adjust font size for small screens */
   }
 
-  /* .context img {
-    width: 80%;
-  } */
+  .context img {
+    width: 70%;
+    height: 100%;
+  }
+
+  .flip-card-front img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .col-lg-6 {
+    padding-left: 5px; /* Adjust the spacing inside the columns */
+    padding-right: 5px;
+    height: max-content; /* Ensure the column height adjusts to its content */
+  }
   .context .container {
-    width: 90%; /* Further reduce width on very small screens */
+    width: 50%; /* Further reduce width on very small screens */
   }
 
   .context h1 {
@@ -71,6 +82,15 @@ body {
 
   .context h3 {
     font-size: 22px; /* Adjust font size for very small screens */
+  }
+
+  .context img {
+    width: 100%;
+    height: 100%;
+  }
+  .flip-card-front img {
+    width: 100%;
+    height: 100%;
   }
 }
 
