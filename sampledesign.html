@@ -1,451 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/style1.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
-  </head>
-  <body data-spy="scroll" data-target="#navbarScroll">
-  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Scrollspy</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
- 
-    <div class="area" id="home"> 
-     
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target="#navbarScroll">
+    <div id="home" class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <section>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </section>
+                <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title display-2">Hi! I'm Julius Fuentiblanca</h5>
+                            <p class="card-text display-4">I'm a full-stack web developer.</p>
+                            <a href="#section1" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light" id="navbarScroll">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScrollContent" aria-controls="navbarScrollContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScrollContent">
+                <ul class="navbar-nav my-2 mx-auto my-lg-0 navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bolder" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bolder" href="#section1">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bolder" href="#section2">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="section1" class="container bg-warning" style="height: 1000px;">
     
-      <div class="context">
-        <div class="container-fluid">
-          <div class="row" style="width: 100%; height: auto;">
-            <!-- Left Column -->
-            <div class="col-lg-6 col-xl-6 d-flex justify-content-center align-items-center">
-              <img src="assets/img/me.png" alt="Profile Picture" class="img-fluid" style="max-height: 100%; max-width: 100%;">
-            </div>
-            <!-- Right Column -->
-            <div class="col-lg-6 col-sm-12 text-center text-light d-flex justify-content-center align-items-center">
-              <div>
-                <h1>Hi! I'm Julius Fuentiblanca</h1>
-                <h3>I'm a web & Application Developer</h3>
-              </div>
-            </div>
-          </div>
+        <div class="container">
+
+            <h3 class="text-center py-3">About Me</h3>
+
+
         </div>
-        
-        </div>
-        <!-- <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-6 col-xl-6">
-              <div class="py-sm-5 py-md-5 py-0-lg">
-                  <img src="assets/img/me.png" alt="">
-              </div>
-           
-            </div>
-            <div class="col-lg-6 col-sm-12 text-center text-light d-lg-flex  justify-content-center align-items-center" style="height: 100vh;">
-              <div>
-                <h1 class="">Hi! I'm Julius Fuentiblanca</h1>
-                <h3>I'm a web & Application Developer</h3>
-              </div>
-            </div>
-            
-          </div>
-        </div> -->
-      <!-- </div> -->
-       
-      <!-- </div> -->
+
+    
     </div>
-      <ul class="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </div>
-    <div class="container-fluid px-0">
-      <nav
-        class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #272d43;"
-        id="navbarScroll"
-      >
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarScrollContent"
-            aria-controls="navbarScrollContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScrollContent">
-            <ul class="navbar-nav my-2 mx-auto my-lg-0 navbar-nav-scroll">
-              <li class="nav-item">
-                <a class="nav-link font-weight-bolder" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link font-weight-bolder" href="#details">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link font-weight-bolder" href="#projects"
-                  >Project</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="#contactme" class="nav-link font-weight-bolder"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
 
-      <div
-        id="details"
-        class="container-fluid px-0"
-        style="height: auto; background-color: #b7aeb1;"
-      >
-       <div class="px-5">
-        <h1 class="text-center py-5">About Me</h1>
 
-        <div
-          class="row no-gutters bg-light position-relative my-2 shadow p-3 bg-white rounded bgInformation"
-        >
-     
-          <div class="col-md-12 position-static my-3 p-4 pl-md-0">
-            <div class="text-light" id="textContainer">
-              <div class="p-3">
-                  <!-- <p class="d-4">I'm <b>Julius Fuentiblanca</b></p> -->
-                  <h4 class="h5">
-                    Web-based developer & Application developer
-                  </p>
-                  <p class="fs-1">
-                    I'm currently using Laravel, ReactJS, PHP, and MySQL to develop websites with interactive web applications. I use Bootstrap and Laravel for design, ensuring a responsive and user-friendly interface. My aim is to enhance existing websites by optimizing performance, improving functionality, and adding new features to better meet user needs. Additionally, my goal is to build new web applications from scratch, making sure they are easy to grow, safe, and follow the best standards in the industry. With this approach, I aim to deliver high-quality, efficient, and easy-to-use solutions that provide smooth experiences and meet or exceed client expectations.
-                  </p>
-                  <p>Click the button below to view my other information.</p>
-                
-                  <a
-                    class="btn cmdbtn btn-outline-light my-2 mx-2"
-                    data-toggle="collapse"
-                    href="#SkillCollapse"
-                    role="button"
-                    aria-expanded="false"
-                    aria-controls="SkillCollapse"
-                    >My Skills</a
-                  >
-                  <a
-                    class="btn cmdbtn btn-outline-light mx-2 my-2"
-                    data-toggle="collapse"
-                    href="#EducationCollapse"
-                    role="button"
-                    aria-expanded="false"
-                    aria-controls="SkillCollapse"
-                    >Education</a
-                  >
-                  <a
-                    class="btn cmdbtn btn-outline-light mx-2 my-2"
-                    data-toggle="collapse"
-                    href="#PersonalInformation"
-                    role="button"
-                    aria-expanded="false"
-                    aria-controls="SkillCollapse"
-                    >Personal Information</a
-                  >
-                </p>
-              </div>
-            </div>
 
-            <div class="collapse multi-collapse my-3" id="SkillCollapse">
-              <div class="card card-body bg-light-subtle px-3">
-                <div class="row g-0">
-                  <div class="col-lg-12 col-md-12 col-sm-12 w-100">
-                    <h4>Programming Language</h4>
-                    <p>
-                      <img src="https://skillicons.dev/icons?i=php,javascript,java&theme=light" />
-                    </p>
-                    <h4>Database</h4>
-                    <p>  <img src="https://skillicons.dev/icons?i=mysql&theme=light" />   <img src="assets/img/msSqlLogo.png" class="rounded bg-light-subtle" height="48" width="48" alt=""/></p>
-                    <h4>Framework</h4>
-                    <img src="https://skillicons.dev/icons?i=laravel,bootstrap,react,tailwind&theme=light" />
-                    <img src="assets/img/inertiaJs.png"  class="rounded" height="48" width="48" alt="">
-                    <img src="assets/img/livewire.png"  class="rounded" height="48" width="48" alt="">
-                    </p>
-                    <!-- <div class="row g-0">
-                      <div class="col-lg-4 col-md-4 col-sm-12">
-                        <h5>Programming Language</h5>
-                        <div class="row">
-                          <div class="col-sm-12 g-1">
-                            <div
-                              class="d-flex flex-sm-column flex-md-column flex-lg-row"
-                            >
-                              <ul class="px-4">
-                                <li><div class="py-2">
-                                  <img src="https://skillicons.dev/icons?i=php&theme=light" />
-                                </div></li>
-                                <li><div class="py-2">
-                                  <img src="https://skillicons.dev/icons?i=javascript&theme=light" />
-                                </div></li>
-                                <li><div class="py-2">
-                                  <img src="https://skillicons.dev/icons?i=java&theme=light" />
-                                </div></li>
-                              </ul>
-                             
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 col-md-4 col-sm-12">
-                        <h5>Database</h5>
-                        <ul class="px-4">
-                          <li><div class="py-2">
-                            <img src="https://skillicons.dev/icons?i=mysql&theme=light" />
-                          </div></li>
-                          <li><div class="py-2">
-                            <img src="assets/img/msSqlLogo.png" class="rounded" height="48" width="48" alt="">
-                          </div></li>
-                        </ul>
-                      </div>
-                      <div class="col-lg-4 col-md-4 col-sm-12">
-                        <h5>Framework</h5>
-                        <div
-                          class="d-flex flex-sm-column flex-md-column flex-lg-row"
-                        >
-                          <ul class="px-4">
-                            <li><div class="py-2">
-                              <img src="https://skillicons.dev/icons?i=laravel&theme=light" />
-                            </div></li>
-                            <li><div class="py-2">
-                              <img src="https://skillicons.dev/icons?i=bootstrap&theme=light" />
-                            </div></li>
-                            <li><div class="py-2">
-                              <img src="https://skillicons.dev/icons?i=react&theme=light" />
-                            </div></li>
-                          </ul>
-                          <ul class="px-3">
-                            <li><div class="py-2">
-                              <img src="https://skillicons.dev/icons?i=tailwind&theme=light" />
-                            </div></li>
-                            <li><div class="py-2"><img src="assets/img/inertiaJs.png"  class="rounded" height="48" width="48" alt=""></div></li>
-                            <li><div class="py-2"><img src="assets/img/livewire.png"  class="rounded" height="48" width="48" alt=""></div></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="collapse multi-collapse my-3" id="EducationCollapse">
-              <div class="card card-body bg-light px-3">
-                <div class="row">
-                  <div class="col-lg-12 col-md-12 w-100">
-                    <h5>Education Background</h5>
-                    <h6>Tertiary</h6>
-                    <p>
-                      Eulogio "Amang" Rodriguez Institute of Science and
-                      Technology <br />
-                      <small>2020 - 2024</small>
-                    </p>
-                    <h6>Senior High School</h6>
-                    <p>
-                      ABE International Business College<br />
-                      <small>2018 - 2020</small>
-                    </p>
-                    <!-- <h6>Junior High School</h6>
-                    <p>
-                      Tondo High School<br />
-                      <small>2013 - 2017</small>
-                    </p> -->
-
-                    <!-- <h6>Primary</h6>
-                    <p>
-                      Manuel L. Quezon Elementary School<br />
-                      <small>2007 - 2013</small>
-                    </p> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="collapse multi-collapse my-3" id="PersonalInformation">
-              <div class="card card-body bg-light px-3">
-                <div class="row">
-                  <div class="col-lg-12 col-md-12 w-100">
-                    <h5>Personal Information</h5>
-                    <h6>Name: Julius D. Fuentiblanca</h6>
-                    <h6>Contact: 09695664450</h6>
-                    <h6>Email: fuentiblanca.j.bsinfotech@gmail.com</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-       </div>
-      <div class="container-fluid " style="background-color: #b7aeb1;">
-        <div
-        id="projects"
-        class="container-fluid py-3"
-        style="height: 105vh"
-      >
-        <div class="mx-auto text-center">
-          <h1 class="py-5">My Projects</h1>
-        </div>
-        <div class="row g-0">
-          <div class="col-lg-12 col-md-12 sm-12 w-100">
-            <div class="row g-0">
-              <div class="col-lg-4 col-md-4 col-sm-12 p-3 m-2">
-                <h4 class="text-center">Barangay Youth Program</h4>
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <!-- Front Side -->
-
-                    <div class="flip-card-front">
-                      <img
-                        src="assets/Project/BarangayProgram.png"
-                        alt=""
-                        class="rounded img-fluid"
-                      />
-                    </div>
-                    <!-- Back Side -->
-                    <div class="flip-card-back">
-                      <h4 class="text-center">Barangay Youth Program</h4>
-                      <p class="p-2">
-                        This is a detailed explanation of the Barangay Youth
-                        Program.
-
-                        This system manages the barangay youth program data and allows users to create accounts, enroll in programs, receive health suggestions, and access waivers. Users can join their desired programs even if their health condition is not ideally suited.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 p-3 col-sm-12 m-2">
-                <h4 class="text-center">Preventive Maintenance Service</h4>
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <!-- Front Side -->
-                    <div class="flip-card-front">
-                      <img
-                        src="assets/Project/PMS.png"
-                        alt=""
-                        class="rounded img-fluid"
-                      />
-                    </div>
-                    <!-- Back Side -->
-                    <div class="flip-card-back py-auto">
-                      <!-- <div class="bg-primary bg-gradient text-white"> -->
-                        <h4 class="text-center">PMS</h4>
-                        <p class="h-25 overflow-auto">
-                          This system manages vehicle maintenance appointments.
-                        </p>
-                      <!-- </div> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 w-100">
-                <!-- <img src="assets/Project/BarangayProgram.png" alt="" class="rounded"> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-       <div class="container-fluid">
-        <div
-        id="contactme"
-        class="container-fluid py-5"
-        style="height: 105vh"
-      >
-        <div class="mx-auto text-center">
-          <h3 class="pt-5">Contact Me</h3>
-        </div>
-        <div class="row g-0">
-          <div class="col-lg-12 col-md-12 col-sm-12 text-center ">
-          
-            <img src="assets/img/bg-email.png" alt="" class="p-3 img-fluid rounded">
-           
-              <h4>Lets Connect</h4>
-              <a
-              class="display-2"
-              href="mailto:fuentiblanca.j.bsinfotech@gmail.com"
-              target="_blank"
-              rel="Send Email"
-              >Click here to email me</a>
-          </div>
-        </div>
-      </div>
-       </div>
-      </div>
-    </div>
+    
+    <div id="section2" class="container bg-warning" style="height: 1000px;">Contact</div>
 
     <!-- Bootstrap JS, jQuery, and Popper.js -->
-    <script src="bootstrap/js/jquery.js"></script>
-    <script src="bootstrap/js/popper.js"></script>
-    <script src="bootstrap/js/bootstrap.js"></script>
-
-    <script>
-      $(document).ready(function () {
-        $('.btn[data-toggle="collapse"]').click(function () {
-          var target = $(this).attr("href");
-          $(".collapse").not(target).collapse("hide"); // isara ang lahat ng ibang collapsible
-        });
-      });
-
-      var textContainer = document.getElementById("textContainer");
-
-      $(document).scroll(function () {
-        var scroll_pos = $(this).scrollTop();
-
-        // Adding or removing 'text-blue' class based on scroll position
-        if (scroll_pos < 730) {
-          // console.log('umay');
-          // console.log(window.scrollY);
-          $(".cmdbtn").removeClass("btn-dark");
-          $(".cmdbtn").addClass("btn-outline-light");
-
-          textContainer.classList.remove("textdark");
-          textContainer.classList.add("text-light");
-          textContainer.classList.add("bgInfod");
-          textContainer.classList.remove("bgInfol");
-        } else {
-          // console.log('awit');
-          // console.log(window.scrollY);
-          $(".cmdbtn").removeClass("btn-outline-light");
-          $(".cmdbtn").addClass("btn-dark");
-          textContainer.classList.remove("text-light");
-          textContainer.classList.add("textdark");
-          textContainer.classList.remove("bgInfol");
-          textContainer.classList.add("bgInfol");
-        }
-      });
-
-      // Log scroll position to console
-
-      //     window.addEventListener('scroll', function() {
-
-      //     if (window.scrollY > 100) { // Change 100 to the desired scroll position
-
-      //     } else {
-      //         textContainer.classList.remove('text-dark');
-      //     }
-      // });
-    </script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
